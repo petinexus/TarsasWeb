@@ -1,0 +1,35 @@
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script defer="" src="./TársasJátékPontSzámlálóKliensFelület_files/firebase-database.js"></script>
+    <script src="./TársasJátékPontSzámlálóKliensFelület_files/firebase-app.js"></script>
+    <script defer="" src="./TársasJátékPontSzámlálóKliensFelület_files/init.js"></script>
+    <script src="./TársasJátékPontSzámlálóKliensFelület_files/fire.js"></script>
+
+    <link rel="stylesheet" href="./TársasJátékPontSzámlálóKliensFelület_files/tarsas.css">
+
+    <title>TársasJátékPontSzámlálóKliensFelület</title>
+    
+  </head>
+  <body onload="list();">
+
+    <input type="text" id="nametext" value="">
+    <button id="add" onclick="add();">✔️</button>
+    <br><br>
+
+    <div id="rangsor"></div>
+
+    <div>
+      <button class="vezerlo" style="left: 0;  float:left; background-color:#ff5252;" id="minusonepoint" onclick="minus();">–</button>
+      <center>
+      <input class="vezerlo" style="left:33.3333%; height: 130px;" type="number" id="szam" value="">
+      </center>
+      <button class="vezerlo" style=" float: right; right: 0; background-color:#4caf50;" id="plusonepoint" onclick="plus();">+</button>
+    </div>
+
+  
+</body>
+</html>
